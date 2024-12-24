@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "SpEvs_cSOauLmOMRy",
+          });
+      })();
+  </script>
+  <title>Regalo Spa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="auth-section">
+      <h1>HOLA CAN ❤️🥰</h1>
+      <p>Primero unas preguntitas para ver si sos vos</p>
+      
+      <form id="authForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+
+        <label for="surname">Apellido:</label>
+        <input type="text" id="surname" required>
+
+        <label for="birthday">Fecha de nacimiento:</label>
+        <input type="date" id="birthday" required>
+
+        <label for="anniversary">Fecha que nos pusimos de novios:</label>
+        <input type="date" id="anniversary" required>
+
+        <label for="winner">Elegi al mas facha de los 2:</label>
+        <select id="winner" name="winner" required>
+          <option value="" disabled selected>Selecciona al mas facha de los 2</option>
+          <option value="guido">Guido</option>
+          <option value="candela">Candela</option>
+        </select>
+
+        <button type="submit">Acceder</button>
+      </form>
+    </div>
+
+    <div id="form-section" style="display: none;">
+      <h1>Te ganaste un dia en el Woodlands Spa🎁</h1>
+      <p>Como no se todavia bien que dia preferis ir neceisto que me completes con opciones para reservarte la sesion y que tipo de terapia queres.</p>
+
+      <form id="spaForm">
+        <label for="day">Día preferido:</label>
+        <input type="date" id="day" name="day" required>
+      
+        <label for="alternateDay1">Primer día alternativo:</label>
+        <input type="date" id="alternateDay1" name="alternateDay1" required>
+      
+        <label for="alternateDay2">Segundo día alternativo:</label>
+        <input type="date" id="alternateDay2" name="alternateDay2" required>
+      
+        <label for="therapy">Tipo de terapia:</label>
+        <select id="therapy" name="therapy" required>
+          <option value="" disabled selected>Selecciona una terapia</option>
+          <option value="Crystal massage">Crystal massage</option>
+          <option value="Five-Pointed Star">Five-Pointed Star</option>
+          <option value="Cranial Massage">Cranial Massage</option>
+          <option value="Laurel Rebalancer">Laurel Rebalancer</option>
+        </select>
+      
+        <div id="therapy-description">
+          <p>Selecciona una opción para ver los detalles de cada terapia.</p>
+        </div>
+      
+        <button type="submit">Enviar</button>
+      </form>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

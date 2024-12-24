@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 20px;
   overflow-y: auto; /* Habilita el desplazamiento vertical */
+  padding-top: 10px;
 }
   
   .container {
